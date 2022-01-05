@@ -44,7 +44,7 @@ Users should be able to:
 
 - [W3Schools Tutorial](https://www.w3schools.com/)
 - [TheNetNinja Channel]()
-- [Maharatech - JS Frontend Track] (https://maharatech.gov.eg/course/index.php?categoryid=13)
+- [Maharatech - JS Frontend Track] (https://maharatech.gov.eg/course/index.php?categoryid=13/)
 
 ## Author
 
