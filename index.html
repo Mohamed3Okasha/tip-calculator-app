@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./script.js"></script>
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="main">
+    <div class="logo">
+      <img src="./assets/logo.svg" alt="">
+    </div>
+  
+    <div class="grid-container parent">
+      <div class="data">
+        <div class="space">
+          <p class="section-header">Bill</p>
+          <input type="text" class="bill-people" id="bill" onchange="getBill(this.value)">
+        </div>
+        <div class="space">
+          <p class="section-header">Select Tip %</p>
+          <input type="button" value="5%" onclick="getPercent(5)">
+          <input type="button" value="10%" onclick="getPercent(10)">
+          <input type="button" value="15%" onclick="getPercent(15)">
+          <input type="button" value="20%" onclick="getPercent(20)">
+          <input type="button" value="25%" onclick="getPercent(25)">
+          <input type="text" value="Custom" class="custom" onchange="getPercent(this.value)">
+        </div>
+        <div class="space">
+          <div>
+            <p class="section-header">Number of People <span id="people-zero"></span> </p>
+          </div>
+          <input type="text" value="0" class="bill-people" id="num-people" onfocusout="calcTip()">
+        </div>
+      </div>
+      <div class="result">
+        <p class="result-title">Tip Amount</p>
+        <p>/ person</p>
+        <p id="tip-amount">$0.0</p>
+        <br>
+        <p class="result-title">Total</p>
+        <p>/ person</p>
+        <p id="total-amount">$0.0</p>
+        <input type="button" value="Reset" id="reset">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
